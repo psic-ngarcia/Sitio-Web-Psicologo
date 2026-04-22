@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neri Garcia | Consultorio Psicológico Especialidad TCC</title>
+    <meta name="description" content="Terapia Cognitivo-Conductual (TCC) con Neri Garcia. Herramientas científicas para entender y transformar tu bienestar emocional en el aquí y ahora." />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+
+    <style>
+      .theme-btn {
+        background: var(--bg-card);
+        border: 2px solid var(--purpura-dopamina);
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--purpura-dopamina);
+        box-shadow: 0 4px 15px rgba(106, 59, 180, 0.2);
+        flex-shrink: 0;
+        transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+      }
+      .theme-btn:hover {
+        background: var(--purpura-dopamina);
+        color: #fff;
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(106, 59, 180, 0.4);
+      }
+      .dark .theme-btn {
+        border-color: #ffffff;
+        color: #ffffff;
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+      }
+      .dark .theme-btn:hover {
+        background: #ffffff;
+        color: var(--purpura-dopamina);
+        box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
+      }
+    </style>
+
+    <header id="main-header">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#" class="brand" aria-label="Cognitiva Centro - Neri García">
+          <img src="/logo-claro.png" alt="Cognitiva Centro" class="light-only nav-logo">
+          <img src="/logo-oscuro.png" alt="Cognitiva Centro" class="dark-only nav-logo">
+        </a>
+
+        <!-- Nav Links (Desktop) -->
+        <nav class="nav-links" id="nav-links" aria-label="Menú principal">
+          <a href="#proceso" class="nav-link">Proceso</a>
+          <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+          <a href="#podcast" class="nav-link">Podcast</a>
+          <a href="#contacto" class="nav-link">Agendar</a>
+          <!-- Botón CTA visible solo en móvil dentro del menú -->
+          <a href="#contacto" class="btn btn-dopamina nav-mobile-cta" style="display:none;">Inicia tu proceso</a>
+        </nav>
+
+        <!-- Right Controls -->
+        <div class="nav-actions">
+          <a href="#contacto" class="btn btn-dopamina nav-cta">Inicia tu proceso</a>
+          <!-- Tema toggle en desktop -->
+          <button id="theme-toggle" class="theme-btn" aria-label="Cambiar modo oscuro" title="Modo Oscuro">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </div>
+
+        <!-- Hamburger (Mobile) -->
+        <div style="display:flex; align-items:center; gap:0.5rem;">
+          <!-- Tema toggle en mobile (visible solo en mobile) -->
+          <button id="theme-toggle-mobile" class="theme-btn" aria-label="Cambiar modo oscuro" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <button id="nav-toggle" class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero section">
+        <!-- Canvas Animado: Red Neuronal / Salud Mental -->
+        <canvas id="neural-canvas"></canvas>
+        
+        <div class="container hero-content text-center mx-auto" style="position: relative; z-index: 2;">
+          <h1 class="stagger-item" style="transition-delay: 0.1s; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.1;">Tu proceso de cambio comienza con un <br><span class="text-highlight">espacio seguro</span>.</h1>
+          <p class="text-lead stagger-item mx-auto" style="transition-delay: 0.2s; margin-top: 1.5rem; color: var(--text-secondary); max-width: 700px;">En Cognitiva Centro te acompañamos a desglosar el malestar y reconstruir tu bienestar con estrategias científicamente validadas.</p>
+          <div class="stagger-item" style="transition-delay: 0.3s; margin-top: 2.5rem;">
+            <a href="#contacto" class="btn btn-dopamina animate-pulse">Inicia tu terapia hoy</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL PROOF / SEPSM -->
+      <div class="social-proof reveal">
+        <div class="container">
+          <div class="proof-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mocha"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            Metodología Validada (SEPSM)
+          </div>
+          <div class="proof-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mocha"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            Espacio Clínico Seguro
+          </div>
+          <div class="proof-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mocha"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Resultados Tangibles
+          </div>
+        </div>
+      </div>
+
+      <!-- METODOLOGÍA -->
+      <section id="proceso" class="section">
+        <div class="container">
+          <div class="text-center reveal" style="margin-bottom: 4rem;">
+            <h2 class="text-highlight">El Proceso TCC</h2>
+            <p class="mx-auto">Un entorno de validación diseñado para que cada pensamiento encuentre su lugar y su calma. No tienes que transitar el cambio en soledad.</p>
+          </div>
+
+          <!-- Diagrama 5 Zonas -->
+          <div class="reveal">
+            <h3 class="text-center" style="margin-bottom: 1rem;">El Diagrama de las Cinco Zonas</h3>
+            <p class="text-center mx-auto" style="font-size: 0.95rem; margin-bottom: 2rem;">Haz clic en cada nodo para entender cómo se conectan en la terapia.</p>
+            
+            <div class="diagram-container">
+              <div class="diagram-node" data-zone="1">
+                <h4>1. Situación</h4>
+                <p>El evento desencadenante en el 'aquí y ahora'. Qué, dónde y con quién ocurre.</p>
+              </div>
+              <div class="diagram-node" data-zone="2">
+                <h4>2. Pensamientos</h4>
+                <p>Las interpretaciones automáticas y distorsiones que cruzan tu mente en ese momento.</p>
+              </div>
+              <div class="diagram-node" data-zone="3">
+                <h4>3. Emociones</h4>
+                <p>El impacto emocional directo (ansiedad, tristeza, ira) derivado de la interpretación.</p>
+              </div>
+              <div class="diagram-node" data-zone="4">
+                <h4>4. S. Físicos</h4>
+                <p>La respuesta de tu cuerpo: tensión, palpitaciones, fatiga o inquietud.</p>
+              </div>
+              <div class="diagram-node" data-zone="5">
+                <h4>5. Comportamiento</h4>
+                <p>Lo que decides hacer (o evitar) como resultado de la suma de los factores anteriores.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fases -->
+          <div class="grid-2" style="margin-top: 6rem;">
+            <div class="reveal">
+              <h3 style="margin-bottom: 2rem;">Un camino estructurado hacia el cambio</h3>
+              <p>Habilidades prácticas para la vida real: una metodología enfocada en objetivos medibles, basada en el rigor clínico de Fernández.</p>
+              <a href="#contacto" class="btn btn-mocha" style="margin-top: 1rem;">Conoce el tratamiento</a>
+            </div>
+            
+            <div class="phases">
+              <div class="card-zone card-hover-fx stagger-item" style="margin-bottom: 1rem;">
+                <h4 style="margin-bottom: 0.25rem;">1. Evaluación Inicial</h4>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">Identificación de metas e historia personal para adaptar la alianza.</p>
+              </div>
+              <div class="card-zone card-hover-fx stagger-item" style="transition-delay: 0.1s; margin-bottom: 1rem;">
+                <h4 style="margin-bottom: 0.25rem;">2. Identificación Cognitiva</h4>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">Localización precisa de pensamientos automáticos y distorsiones.</p>
+              </div>
+              <div class="card-zone card-hover-fx stagger-item" style="transition-delay: 0.2s; margin-bottom: 1rem;">
+                <h4 style="margin-bottom: 0.25rem;">3. Reestructuración</h4>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">Desafío analítico y reemplazo por creencias funcionales y saludables.</p>
+              </div>
+              <div class="card-zone card-hover-fx stagger-item" style="transition-delay: 0.3s; margin-bottom: 1rem;">
+                <h4 style="margin-bottom: 0.25rem;">4. Cambio y Práctica</h4>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">Implementación de acciones, seguimiento y prevención de recaídas a largo plazo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section id="sobre-mi" class="section" style="background-color: var(--bg-card);">
+        <div class="container grid-2">
+          <div class="about-image reveal" style="position: relative; border-radius: 20px; overflow: hidden; height: 500px; background-color: var(--mocha-light); display: flex; align-items: center; justify-content: center;">
+            <img src="/neri-foto.jpg" alt="Lic. Neri García" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            <!-- Viñeta suave de color morado esfumada al centro -->
+            <div style="position: absolute; inset: 0; background: radial-gradient(circle at top center, transparent 40%, rgba(106, 59, 180, 0.75) 100%); pointer-events: none;"></div>
+          </div>
+          <div class="about-content reveal">
+            <h2 class="text-highlight">Sobre Mí</h2>
+            <h3 style="font-weight: 500; font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--mocha-mousse);">Neri Garcia</h3>
+            <p>Construyamos juntos tu camino hacia el equilibrio. Como especialista en Terapia Cognitivo-Conductual, mi enfoque combina la elegancia y el rigor del expertiz clínico con la calidez del acompañamiento cercano.</p>
+            <p>He diseñado este espacio para que sea tu refugio seguro, un entorno donde la ciencia psicológica se encuentra con la comprensión profunda del ser humano.</p>
+            <p style="font-weight: 600; color: var(--text-primary); margin-top: 1.5rem;">"Tu bienestar es el centro de nuestra alianza. Estoy aquí para acompañarte en cada paso de tu reconstrucción."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PODCAST Y RECURSOS -->
+      <section id="podcast" class="section">
+        <div class="container">
+          <div class="text-center reveal" style="margin-bottom: 4rem;">
+            <h2 class="text-highlight">Tu espacio para la reflexión</h2>
+            <p class="mx-auto text-secondary">Porque el trabajo más importante ocurre fuera del consultorio. Explora episodios de nuestro podcast y materiales descargables pensados para darte claridad mental cuando más la necesitas.</p>
+          </div>
+          
+          <div class="grid-2 reveal">
+            <!-- Audio Player Interactivo (Idea 2) -->
+            <div class="podcast-player card-hover-fx" style="background: var(--bg-color); border-radius: 20px; padding: 2rem; border: 1px solid rgba(164, 119, 100, 0.2); display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden;">
+              <div style="margin-bottom: 2rem; position: relative; z-index: 2;">
+                <span class="text-dopamina" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Episodio Destacado</span>
+                <h3 id="podcast-title" style="margin-top: 0.5rem; line-height: 1.2;">La mente y Tu dinero ¿Por qué nos duele tanto la crisis?</h3>
+                <p id="podcast-desc" style="font-size: 0.95rem; margin-top: 1rem; color: var(--text-secondary);">¿La crisis te está quitando la paz? Escucha cómo el contexto actual afecta tu bienestar y cómo evitar que la preocupación financiera consuma tu vida.</p>
+              </div>
+              
+              <div class="player-controls" style="display: flex; align-items: center; gap: 1.5rem; position: relative; z-index: 2; margin-top: auto;">
+                <button id="podcast-play-btn" class="btn btn-dopamina" style="border-radius: 50%; width: 60px; height: 60px; padding: 0; display: flex; align-items: center; justify-content: center; border: none; box-shadow: 0 4px 15px rgba(106,59,180,0.3); flex-shrink: 0; cursor: pointer;">
+                  <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                </button>
+                
+                <!-- Reproductor de Audio Nativo Oculto -->
+                <audio id="podcast-audio" src="https://anchor.fm/s/1106186fc/podcast/play/118841252/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-22%2F422585164-44100-2-282f5add27123.mp3"></audio>
+                
+                <!-- Ondas Sonoras (Soundwaves) -->
+                <div class="soundwave-container" id="soundwave-viz">
+                  <div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div><div class="sound-bar"></div>
+                </div>
+              </div>
+
+              <!-- Botón Ver más episodios -->
+              <a href="https://open.spotify.com/show/2y2EtLVqQ1Qr4PrHTP1y8J?si=5db862fff68a4390" target="_blank" class="spotify-link-btn" style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 0.75rem; color: var(--purpura-dopamina); text-decoration: none; font-weight: 600; font-size: 0.85rem; padding: 0.6rem 1.2rem; border: 1px solid rgba(106, 59, 180, 0.2); border-radius: 50px; background: rgba(106, 59, 180, 0.05); transition: all 0.3s ease; position: relative; z-index: 2; align-self: flex-start;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.508 17.302c-.223.367-.703.483-1.07.26-2.5-1.53-5.647-1.875-9.356-1.028-.418.095-.838-.168-.933-.586-.095-.417.168-.837.586-.933 4.057-.927 7.55-.523 10.364 1.2a.81.81 0 0 1 .309 1.087zm1.48-3.253c-.28.455-.878.6-1.333.32-2.86-1.758-7.22-2.266-10.602-1.24-.515.157-1.054-.136-1.21-.652-.157-.516.136-1.054.652-1.21 3.86-1.17 8.663-.6 11.91 1.4a.97.97 0 0 1 .583 1.382zm.128-3.4c-3.433-2.038-9.1-2.228-12.39-1.23-.527.16-1.082-.143-1.242-.67-.16-.527.143-1.082.67-1.242 3.79-1.15 10.04-.933 14 1.418.475.281.63.896.35 1.37-.282.475-.897.63-1.371.35H19.116z"/></svg>
+                Escuchar todos los episodios
+              </a>
+              
+              <!-- Decoración abstracta de fondo en la tarjeta -->
+              <div style="position: absolute; bottom: -20px; right: -20px; width: 150px; height: 150px; background: radial-gradient(circle, var(--purpura-dopamina) 0%, transparent 70%); opacity: 0.1; border-radius: 50%;"></div>
+            </div>
+            
+            <!-- Descarga de Recurso (Idea 3) -->
+            <div class="resource-card" style="display: flex; flex-direction: column; justify-content: center; padding: 1.5rem;">
+              <h3 style="margin-bottom: 1rem; color: var(--mocha-mousse); font-family: var(--font-heading);">Material Práctico Complementario</h3>
+              <p style="margin-bottom: 2rem;">La terapia avanza más rápido cuando la teoría se vuelve acción. Acompaña la escucha de este episodio descargando tu plantilla gratuita de <strong>Registro de Pensamientos Automáticos (RPA)</strong>.</p>
+              
+              <a href="#" class="btn btn-mocha" style="display: inline-flex; align-items: center; gap: 0.75rem; align-self: flex-start;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Descargar Guía en PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESERVAS / CALENDLY -->
+      <section id="contacto" class="section text-center">
+        <div class="container reveal">
+          <h2 class="text-highlight">Inicia tu Proceso de Cambio</h2>
+          <p style="margin-top: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto; margin-bottom: 3rem;">La incertidumbre puede paralizarnos, pero la solución está a un clic de distancia. Selecciona tu horario para la sesión de evaluación inicial.</p>
+          
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/psic-ngarcia?hide_gdpr_banner=1&background_color=transparent" style="min-width:320px;height:950px;max-width:1000px;margin:0 auto;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
+        </div>
+      </section>
+
+      <!-- REDES SOCIALES / CONECTEMOS -->
+      <section id="redes" class="section" style="background-color: var(--bg-card); position: relative; overflow: hidden;">
+        <div class="container reveal">
+          <div class="text-center" style="margin-bottom: 4rem;">
+            <h2 class="text-highlight">Conectemos</h2>
+            <p class="mx-auto" style="max-width: 600px;">Más allá del consultorio, comparto herramientas, reflexiones y el día a día de la salud mental. Encuéntrame en tus plataformas favoritas.</p>
+          </div>
+
+          <div class="social-grid">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/psic_ngarcia/" target="_blank" class="social-card fade-in">
+              <div class="social-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.272 2.69.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.353 2.612 6.766 6.967 6.967 1.28.057 1.688.071 4.947.071s3.667-.014 4.947-.072c4.351-.2 6.764-2.612 6.967-6.967.058-1.28.071-1.688.071-4.947s-.014-3.667-.072-4.947c-.201-4.353-2.612-6.766-6.967-6.967C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4.162 4.162 0 1 1 0-8.324 4.162 4.162 0 0 1 0 8.324zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </div>
+              <h4>Instagram</h4>
+              <p>@psic_ngarcia</p>
+            </a>
+
+            <!-- Spotify -->
+            <a href="https://open.spotify.com/show/2y2EtLVqQ1Qr4PrHTP1y8J?si=5db862fff68a4390" target="_blank" class="social-card fade-in" style="transition-delay: 0.1s;">
+              <div class="social-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.508 17.302c-.223.367-.703.483-1.07.26-2.5-1.53-5.647-1.875-9.356-1.028-.418.095-.838-.168-.933-.586-.095-.417.168-.837.586-.933 4.057-.927 7.55-.523 10.364 1.2a.81.81 0 0 1 .309 1.087zm1.48-3.253c-.28.455-.878.6-1.333.32-2.86-1.758-7.22-2.266-10.602-1.24-.515.157-1.054-.136-1.21-.652-.157-.516.136-1.054.652-1.21 3.86-1.17 8.663-.6 11.91 1.4a.97.97 0 0 1 .583 1.382zm.128-3.4c-3.433-2.038-9.1-2.228-12.39-1.23-.527.16-1.082-.143-1.242-.67-.16-.527.143-1.082.67-1.242 3.79-1.15 10.04-.933 14 1.418.475.281.63.896.35 1.37-.282.475-.897.63-1.371.35H19.116z"/></svg>
+              </div>
+              <h4>Podcast</h4>
+              <p>Spotify Show</p>
+            </a>
+
+            <!-- Tiktok -->
+            <a href="https://www.tiktok.com/@mente.en.calma.psic?_r=1&_t=ZS-95k7fvrMcse" target="_blank" class="social-card fade-in" style="transition-delay: 0.2s;">
+              <div class="social-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.01-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.31-.75.42-1.24 1.25-1.33 2.1-.1.7.1 1.41.53 1.96.44.53 1.11.88 1.79.94.7.06 1.41-.11 1.97-.54.55-.44.92-1.07.97-1.77.01-4.48 0-8.97.01-13.45Z"/></svg>
+              </div>
+              <h4>Tiktok</h4>
+              <p>@mente.en.calma.psic</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Marca de agua decorativa -->
+        <div style="position: absolute; bottom: -5%; right: -5%; font-size: 15vw; font-family: var(--font-heading); font-style: italic; font-weight: 700; opacity: 0.03; color: var(--mocha-mousse); pointer-events: none; white-space: nowrap;">Neri García</div>
+      </section>
+    </main>
+
+    <!-- FOOTER PREMIUM -->
+    <footer>
+      <div class="container footer-content">
+        <div>
+          <img src="/logo-claro.png" alt="Cognitiva Centro" class="light-only footer-logo">
+          <img src="/logo-oscuro.png" alt="Cognitiva Centro" class="dark-only footer-logo">
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/psic_ngarcia/" target="_blank" class="footer-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058-1.646-.07 4.85-.07zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.272 2.69.072 7.053.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.353 2.612 6.766 6.967 6.967 1.28.057 1.688.071 4.947.071s3.667-.014 4.947-.072c4.351-.2 6.764-2.612 6.967-6.967.058-1.28.071-1.688.071-4.947s-.014-3.667-.072-4.947c-.201-4.353-2.612-6.766-6.967-6.967C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4.162 4.162 0 1 1 0-8.324 4.162 4.162 0 0 1 0 8.324zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+          <a href="https://open.spotify.com/show/2y2EtLVqQ1Qr4PrHTP1y8J?si=5db862fff68a4390" target="_blank" class="footer-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.508 17.302c-.223.367-.703.483-1.07.26-2.5-1.53-5.647-1.875-9.356-1.028-.418.095-.838-.168-.933-.586-.095-.417.168-.837.586-.933 4.057-.927 7.55-.523 10.364 1.2a.81.81 0 0 1 .309 1.087zm1.48-3.253c-.28.455-.878.6-1.333.32-2.86-1.758-7.22-2.266-10.602-1.24-.515.157-1.054-.136-1.21-.652-.157-.516.136-1.054.652-1.21 3.86-1.17 8.663-.6 11.91 1.4a.97.97 0 0 1 .583 1.382zm.128-3.4c-3.433-2.038-9.1-2.228-12.39-1.23-.527.16-1.082-.143-1.242-.67-.16-.527.143-1.082.67-1.242 3.79-1.15 10.04-.933 14 1.418.475.281.63.896.35 1.37-.282.475-.897.63-1.371.35H19.116z"/></svg></a>
+          <a href="https://www.tiktok.com/@mente.en.calma.psic?_r=1&_t=ZS-95k7fvrMcse" target="_blank" class="footer-social-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.01-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.31-.75.42-1.24 1.25-1.33 2.1-.1.7.1 1.41.53 1.96.44.53 1.11.88 1.79.94.7.06 1.41-.11 1.97-.54.55-.44.92-1.07.97-1.77.01-4.48 0-8.97.01-13.45Z"/></svg></a>
+        </div>
+
+        <div class="footer-legal">
+          <p>&copy; 2026 Cognitiva Centro - Psic. Neri García. Todos los derechos reservados. Especialidad en Terapia Cognitivo Conductual.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Footer -->
+    <a href="https://api.whatsapp.com/send?phone=+5623974393&text=Hola,%20me%20gustar%C3%ADa%20recibir%20mas%20informes%20sobre%20las%20sesiones%20y%20agendar" target="_blank" class="sticky-cta animate-float" aria-label="Contactar por WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    </a>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
