@@ -34,10 +34,9 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: /public_html/
-          state-name: .absolute-reset-sync-state.json
-          dangerous-clean-slate: true
+          server-dir: ./public_html/
+          state-name: .final-production-sync.json
+          dangerous-clean-slate: false
           exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
+            **/blog/**
+            blog/**
