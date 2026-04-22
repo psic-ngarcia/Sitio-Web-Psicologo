@@ -34,10 +34,10 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: public_html/PRUEBA_GITHUB/
-          state-name: .test-folder-sync.json
-          dangerous-clean-slate: false
+          server-dir: public_html/
+          state-name: .full-reset-sync-state.json
+          dangerous-clean-slate: true
           exclude: |
-            **/blog/**
-            blog/**
-            .ftp-deploy-sync-state.json
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
